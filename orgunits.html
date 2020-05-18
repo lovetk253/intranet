@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sơ đồ tổ chức</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/orgunits.css">
+
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="page-wrapper chiller-theme toggled">
+        <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+            <i class="fas fa-bars"></i>
+        </a>
+        <nav id="sidebar" class="sidebar-wrapper"></nav>
+        <main class="page-content">
+            <div class="container-fluid">
+                <div class="container">
+                    <form method="post">
+                        <h2>Pro sidebar</h2>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="profile-img">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog"
+                                        alt="" />
+                                    <div class="file btn btn-lg btn-primary">
+                                        Change Photo
+                                        <input type="file" name="file" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="profile-head">
+                                    <h5>
+                                        Kshiti Ghelani
+                                    </h5>
+                                    <h6>
+                                        Web Developer and Designer
+                                    </h6>
+                                    <p class="proile-rating">RANKINGS : <span>8/10</span></p>
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home"
+                                                role="tab" aria-controls="home" aria-selected="true">About</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile"
+                                                role="tab" aria-controls="profile" aria-selected="false">Timeline</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="profile-work">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" href="#demoq" aria-expanded="true">Sơ đồ tổ chức</a>
+                                        </h4>
+                                    </div>
+                                    <div id="demoq" class="panel-collapse collapse show">
+                                        <ul class="list-group list-group-flush" id="demo">
+                                        </ul>
+                                    </div>
+                                    <p>WORK LINK</p>
+                                    <a href="">Website Link</a><br />
+                                    <a href="">Bootsnipp Profile</a><br />
+                                    <a href="">Bootply Profile</a>
+                                    <p>SKILLS</p>
+                                    <a href="">Web Designer</a><br />
+                                    <a href="">Web Developer</a><br />
+                                    <a href="">WordPress</a><br />
+                                    <a href="">WooCommerce</a><br />
+                                    <a href="">PHP, .Net</a><br />
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <a id="numberOfUser"></a>
+                                <table class="table table-bordered" id = "userInOrgUnit">
+                                    <thead>
+                                      <tr>
+                                        <th>Firstname</th>
+                                        <th>Lastname</th>
+                                        <th>Email</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                  </table>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="auth-status" style="display: inline; padding-left: 25px"></div>
+                <hr>
+            </div>
+        </main>
+    </div>
+    <div id="footer"></div>
+    <script src="js/home.js"></script>
+    <script src="common/headerfooter.js"></script>
+    <script src="common/sidebar.js"></script>
+    <script src="js/orgunits.js"></script>
+</body>
+
+</html>

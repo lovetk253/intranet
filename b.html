@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="google-signin-client_id"
+    content="443946836961-ub8dup9hj3cs2098vbffsq1hv2kn9hhp.apps.googleusercontent.com">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>Google Auth Demo</title>
+</head>
+
+<body onload="init()">
+  <div id="g-signin-btn" class="g-signin2" data-onsuccess="onSignIn"></div>
+  <div><a href="#" onclick="signOut();">Sign out</a></div>
+  <div><a href="#" onclick="disconnect();">Disconnect</a></div>
+  <div><img id="profileImage" src="" /></div>
+  <textarea id="message" cols="80" rows="10"></textarea>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
